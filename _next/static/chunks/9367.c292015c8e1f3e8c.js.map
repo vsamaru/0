@@ -1,0 +1,1 @@
+{"version":3,"file":"static/chunks/9367.c292015c8e1f3e8c.js","mappings":"yHAEA,UAAeA,EAAf","sources":["webpack://_N_E/./src/ui/components/shared/WorkspaceSettingsModal/index.tsx"],"sourcesContent":["import WorkspaceSettings from \"./WorkspaceSettingsModal\";\n\nexport default WorkspaceSettings;\n"],"names":["WorkspaceSettings"],"sourceRoot":""}
