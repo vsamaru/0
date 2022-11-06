@@ -12,24 +12,24 @@ import setupDevtools from "ui/setup/dynamic/devtools";
 import { bootstrapStore } from "ui/setup/store";
 import type { UIState } from "ui/state";
 
-import {
-  createGetRecordingMock,
-  createGetUserMock,
-  createRecordingOwnerUserIdMock,
-  createUserSettingsMock,
-} from "../../test/mock/src/graphql";
+// import {
+//   createGetRecordingMock,
+//   createGetUserMock,
+//   createRecordingOwnerUserIdMock,
+//   createUserSettingsMock,
+// } from "../../test/mock/src/graphql";
 
 const recordingId = uuid();
 const userId = uuid();
 const user = { id: userId, uuid: userId };
 
 // Create common GraphQL mocks, reused from the E2E tests
-const graphqlMocks = [
-  ...createUserSettingsMock(),
-  ...createRecordingOwnerUserIdMock({ recordingId, user }),
-  ...createGetRecordingMock({ recordingId, user }),
-  ...createGetUserMock({ user }),
-];
+// const graphqlMocks = [
+//   ...createUserSettingsMock(),
+//   ...createRecordingOwnerUserIdMock({ recordingId, user }),
+//   ...createGetRecordingMock({ recordingId, user }),
+//   ...createGetUserMock({ user }),
+// ];
 
 const noop = () => false;
 
@@ -108,7 +108,7 @@ async function render(
     store = await createTestStore(preloadedState);
   }
 
-  const mocks = graphqlMockOverrides || graphqlMocks;
+  const mocks = graphqlMockOverrides 
 
   function Wrapper({ children }: PropsWithChildren<{}>): JSX.Element {
     return (
