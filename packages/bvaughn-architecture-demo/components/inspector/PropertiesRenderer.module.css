@@ -1,0 +1,29 @@
+.Bucket,
+.Prototype {
+  color: var(--object-inspector-prototype-color);
+  display: inline;
+  min-height: 1em;
+}
+
+.BucketLabel {
+  color: var(--object-inspector-bucket-color);
+}
+
+.MapIndex {
+  color: var(--object-inspector-expanded-key);
+}
+
+.MapEntryPrefix {
+  color: var(--object-inspector-expanded-key);
+}
+
+.NoEntries {
+  color: var(--object-inspector-prototype-color);
+  font-style: italic;
+  min-height: 1em;
+  padding-left: calc(0.5em + 0.5ch);
+}
+
+.Separator {
+  color: var(--object-inspector-separator-color);
+}

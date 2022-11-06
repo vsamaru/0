@@ -1,0 +1,168 @@
+/* This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at <http://mozilla.org/MPL/2.0/>. */
+
+:root {
+  /* This will be overridden by `ColumnBreakpoints.tsx` at runtime */
+  --print-statement-max-width: 100%;
+  --codemirror-gutter-width: 0px;
+}
+
+.breakpoint-panel {
+  margin: 0.25rem 0 0.5rem -1px;
+  background: var(--theme-toolbar-background);
+  border: 1px solid var(--theme-toolbar-background);
+  color: var(--theme-toolbar-color);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+  max-width: var(--print-statement-max-width);
+}
+
+.breakpoint-panel .CodeMirror-lines {
+  background-color: transparent !important;
+}
+
+.breakpoint-panel .button-container {
+  padding: 8px;
+}
+
+.breakpoint-panel .paused-add-comment {
+  background-color: var(--secondary-accent);
+}
+
+.breakpoint-panel .action {
+  color: var(--primaryAccent);
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.breakpoint-panel .summary {
+  display: flex;
+  justify-content: space-between;
+}
+
+.breakpoint-panel .statements-container {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.breakpoint-panel .statement {
+  align-items: center;
+  display: flex;
+  height: 28px;
+  line-height: 16px;
+  padding: 4px;
+  white-space: nowrap;
+  background-color: var(--theme-text-field-bgcolor);
+  border-radius: 0.25rem;
+  transition: background-color 180ms ease-out;
+}
+
+.breakpoint-panel .statement:hover {
+  background-color: var(--theme-text-field-bgcolor-hover);
+}
+
+.breakpoint-panel .statement:first-child {
+  padding-top: 8px;
+}
+
+.breakpoint-panel .statement:last-child {
+  padding-bottom: 8px;
+}
+
+.breakpoint-panel .panel-editor form .CodeMirror {
+  border-radius: 4px;
+  border: 1px solid transparent;
+  color: var(--theme-toolbar-color);
+  display: flex;
+  font-family: var(--monospace-font-family);
+  font-size: var(--theme-code-font-size);
+  width: 100%;
+  min-height: 28px;
+  padding-top: 2px;
+  background-color: var(--theme-base-90);
+  caret-color: yellow;
+}
+
+.breakpoint-panel .panel-editor.conditional form .CodeMirror {
+  border: 1px solid var(--theme-text-field-bgcolor);
+}
+
+.breakpoint-panel form .form-row {
+  align-items: center;
+  display: flex;
+}
+
+.breakpoint-panel .panel-editor form .form-row.invalid .CodeMirror {
+  border-color: var(--red-50);
+}
+
+.breakpoint-panel form textarea {
+  width: 100%;
+  height: 26px;
+  resize: none;
+  border-radius: 4px;
+}
+
+.breakpoint-panel .CodeMirror-scroll {
+  display: flex;
+  flex-grow: 1;
+}
+
+/* This removes padding so we can match the positions of both editing and
+non-editing markup */
+.breakpoint-panel .CodeMirror .CodeMirror-line {
+  padding: 0px;
+}
+
+.breakpoint-panel button.save:hover {
+  background: var(--primary-accent-hover);
+  color: white;
+}
+
+/* Breakpoint Navigation */
+
+.breakpoint-panel .breakpoint-navigation-commands .img {
+  background: var(--breakpoint-arrow);
+}
+
+.breakpoint-panel .breakpoint-navigation-commands .disabled .img {
+  background: var(--breakpoint-arrow-disabled);
+}
+
+.breakpoint-panel .breakpoint-navigation-commands button:not(.disabled):hover {
+  background-color: var(--theme-toolbar-background-hover);
+}
+
+.breakpoint-panel .add-comment-icon {
+  font-size: 1rem;
+}
+
+.breakpoint-panel .summary .statement:hover .expression {
+  background-position: 1px 14px;
+  background-size: 5px 1.5px;
+  background-repeat: repeat-x;
+}
+
+.breakpoint-panel .summary {
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+
+.breakpoint-panel .expression {
+  flex: 1;
+}
+
+.breakpoint-panel .summary .statement:hover {
+  cursor: pointer;
+}
+
+.breakpoint-panel .summary .statement .pencil {
+  align-self: center;
+}
+
+.breakpoint-panel .summary .statement:hover .pencil {
+  color: var(--breakpoint-tip);
+}

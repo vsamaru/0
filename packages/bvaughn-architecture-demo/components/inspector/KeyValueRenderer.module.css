@@ -1,0 +1,23 @@
+.KeyValue {
+  display: inline;
+  text-align: start;
+  vertical-align: top;
+}
+
+.HorizontalName {
+  color: var(--object-inspector-inline-key);
+}
+.VerticalName {
+  color: var(--object-inspector-expanded-key);
+}
+.VerticalNameWithFlag {
+  color: var(--object-inspector-expanded-key-with-flag);
+}
+
+.ToggleAlignmentPadding {
+  margin-left: 1.25em;
+}
+
+.Separator {
+  color: var(--object-inspector-separator-color);
+}

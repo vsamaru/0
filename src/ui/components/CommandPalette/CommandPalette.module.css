@@ -1,0 +1,18 @@
+.commandPaletteWrapper {
+  max-width: 400px;
+  min-width: 280px;
+  background-color: var(--theme-base-100);
+  color: var(--body-color);
+}
+
+.commandPallete {
+  border-bottom: 1px solid var(--theme-base-85);
+}
+
+.shortcut:hover {
+  background-color: var(--theme-base-90);
+}
+
+.shortcutHover {
+  background-color: var(--theme-base-90);
+}

@@ -1,0 +1,250 @@
+:root {
+  --font-family-default: sans-serif;
+  --font-family-monospace: Menlo, ui-monospace, SFMono-Regular, Monaco, Consolas, Liberation Mono,
+    Courier New, monospace;
+}
+
+:root,
+:root.prefers-default-font-size {
+  --font-size-large: 16px;
+  --font-size-regular: 12px;
+  --font-size-small: 10px;
+  --font-size-tiny: 8px;
+}
+
+:root.prefers-large-font-size {
+  --font-size-large: 20px;
+  --font-size-regular: 14px;
+  --font-size-small: 12px;
+  --font-size-tiny: 10px;
+}
+
+:root,
+:root.theme-dark {
+  --color-transparent: rgba(0, 0, 0, 0);
+
+  --scroll-thumb-color: #454950;
+
+  --background-color-contrast-1: #0e1119;
+  --background-color-contrast-2: #192230;
+  --background-color-contrast-3: #2a3343;
+  --background-color-contrast-4: #454950;
+  --background-color-contrast-5: #e1e6ed;
+  --background-color-default: #081120;
+  --background-color-error: #4b2f36;
+  --background-color-light: #18181a;
+  --background-color-primary-button: #09a6e9;
+  --background-color-secondary-button: #f02d5e;
+  --background-color-tertiary-button: #929292;
+  --background-color-disabled-button: #454950;
+  --background-color-current-execution-point: #25364e;
+  --background-color-current-search-result: #42381f;
+  --background-color-warning: #42381f;
+  --color-brand: #09a6e9;
+  --color-contrast: #081121;
+  --color-current: #f02d5e;
+  --color-default: #ffffff;
+  --color-dim: #aaaaaa;
+  --color-dimmer: #666666;
+  --color-error: #ffb3d2;
+  --color-toggle-active: #6ba6ff;
+  --color-primary-button: #ffffff;
+  --color-secondary-button: #ffffff;
+  --color-tertiary-button: #000000;
+  --color-disabled-button: #ffffff;
+  --color-warning: #fce2a1;
+  --border-color: #e1e6ed;
+  --border-color-current-execution-point: #2563be;
+  --border-color-light: #18181a;
+  --border-color-error: #7a4242;
+  --border-color-warning: #6f5920;
+
+  --color-hit-counts-bar-0: #445064;
+  --color-hit-counts-bar-1: #2563be;
+  --color-hit-counts-bar-2: #6ba6ff;
+  --color-hit-counts-bar-3: #baecfa;
+  --color-hit-counts-label-background-1: #1c2b45;
+  --color-hit-counts-label-background-2: #25364e;
+  --color-hit-counts-label-background-3: #30404e;
+  --color-hit-counts-label-color: #a4c6f8;
+
+  --color-primary-background: var(--background-color-contrast-1);
+  --color-secondary-background: var(--background-color-contrast-3);
+  --color-control-background: var(--background-color-contrast-4);
+  --color-control-background-active: var(--background-color-primary-button);
+
+  --collapsible-toggle-color: #9ba0a5;
+
+  --context-menu-background-color: var(--background-color-contrast-3);
+  --context-menu-background-color-hover: var(--background-color-default);
+
+  --object-inspector-go-to-definition-icon-color: #dddddd;
+  --object-inspector-go-to-definition-icon-color-hover: #ffffff;
+  --object-inspector-invoke-getter-icon-color: #dddddd;
+  --object-inspector-invoke-getter-icon-color-hover: #ffffff;
+  --object-inspector-prototype-color: #939395;
+  --object-inspector-separator-color: #939395;
+  --object-inspector-function-keyword: #ff7de9;
+  --object-inspector-function-name: #bcc5ce;
+  --object-inspector-expanded-key: #81d5ff;
+  --object-inspector-expanded-key-with-flag: #5ca9cf;
+  --object-inspector-inline-key: #36d1c4;
+  --object-inspector-bucket-color: #939395;
+
+  --value-type-bigint: #86de74;
+  --value-type-boolean: #86de74;
+  --value-type-date: #34d3c6;
+  --value-type-error: #ffb3d2;
+  --value-type-nan: #86de74;
+  --value-type-null: #939395;
+  --value-type-number: #86de74;
+  --value-type-object: #e6e9ec;
+  --value-type-regexp: #34d3c6;
+  --value-type-string: #e7eaed;
+  --value-type-symbol: #34d3c6;
+  --value-type-undefined: #939395;
+  --value-type-html-attribute-name: #ff7de9;
+  --value-type-html-attribute-separator: #9ba0a5;
+  --value-type-html-attribute-value: #ae87f2;
+  --value-type-html-tag: #75bffe;
+  --value-type-html-tag-bracket: #e6e9ec;
+  --value-type-html-text: #d7d7db;
+
+  --badge-default-color: #898f95;
+  --badge-default-contrast-color: #000;
+  --badge-green-color: #69e261;
+  --badge-green-contrast-color: #050;
+  --badge-orange-color: #ff9a19;
+  --badge-orange-contrast-color: #fff;
+  --badge-purple-color: #cc81ff;
+  --badge-purple-contrast-color: #fff;
+  --badge-unicorn-color: #e110b3;
+  --badge-unicorn-contrast-color: #fff;
+  --badge-yellow-color: #fee608;
+  --badge-yellow-contrast-color: rgb(99, 79, 5);
+
+  --pulse-color-off: var(--color-transparent);
+  --pulse-color-on: var(--background-color-contrast-3);
+
+  --focus-mode-active-background-color: var(--background-color-contrast-4);
+  --focus-mode-thumb-color: var(--background-color-contrast-3);
+  --region-focused-color: var(--background-color-contrast-5);
+  --region-unfocused-color: var(--background-color-contrast-3);
+  --region-loaded-color: #939395;
+  --region-loading-color: #69e261;
+}
+
+:root.theme-light {
+  --color-transparent: rgba(255, 255, 255, 0);
+
+  --scroll-thumb-color: #aaaaaa;
+
+  --background-color-contrast-1: #e6e6e6;
+  --background-color-contrast-2: #ffffff;
+  --background-color-contrast-3: #82888c;
+  --background-color-contrast-4: #223344;
+  --background-color-contrast-5: #081121;
+  --background-color-default: #e9e9e9;
+  --background-color-error: #ffeeee;
+  --background-color-light: #f9f9fa;
+  --background-color-primary-button: #09a6e9;
+  --background-color-secondary-button: #f02d5e;
+  --background-color-tertiary-button: #929292;
+  --background-color-disabled-button: #666666;
+  --background-color-current-execution-point: #eaf3ff;
+  --background-color-current-search-result: #fffac8;
+  --background-color-warning: #fffac8;
+  --border-color: #081121;
+  --border-color-current-execution-point: #69a6ff;
+  --border-color-light: #f9f9fa;
+  --border-color-error: #f8d7d7;
+  --border-color-warning: #fce2a1;
+
+  --color-brand: #09a6e9;
+  --color-contrast: #ffffff;
+  --color-current: #f02d5e;
+  --color-default: #223344;
+  --color-dim: #666666;
+  --color-dimmer: #aaaaaa;
+  --color-error: #ff0000;
+  --color-toggle-active: #2979ef;
+  --color-primary-button: #ffffff;
+  --color-secondary-button: #ffffff;
+  --color-tertiary-button: #ffffff;
+  --color-disabled-button: #ffffff;
+  --color-warning: #6c5914;
+
+  --color-hit-counts-bar-0: #d9dad9;
+  --color-hit-counts-bar-1: #bbeafa;
+  --color-hit-counts-bar-2: #69a6ff;
+  --color-hit-counts-bar-3: #2979ef;
+  --color-hit-counts-label-background-1: #f6fcfe;
+  --color-hit-counts-label-background-2: #eaf3ff;
+  --color-hit-counts-label-background-3: #e2ebfe;
+  --color-hit-counts-label-color: #47628b;
+
+  --color-primary-background: #ffffff;
+  --color-secondary-background: #eeeeee;
+  --color-control-background: var(--background-color-contrast-1);
+  --color-control-background-active: var(--background-color-primary-button);
+
+  --collapsible-toggle-color: #868688;
+
+  --context-menu-background-color: var(--background-color-default);
+  --context-menu-background-color-hover: var(--background-color-contrast-1);
+
+  --object-inspector-go-to-definition-icon-color: #222222;
+  --object-inspector-go-to-definition-icon-color-hover: #000000;
+  --object-inspector-invoke-getter-icon-color: #222222;
+  --object-inspector-invoke-getter-icon-color-hover: #000000;
+  --object-inspector-prototype-color: #737373;
+  --object-inspector-separator-color: #737373;
+  --object-inspector-function-keyword: #dd00a8;
+  --object-inspector-function-name: #0074e8;
+  --object-inspector-expanded-key: #0074e8;
+  --object-inspector-expanded-key-with-flag: #0074e8;
+  --object-inspector-inline-key: #0074e8;
+  --object-inspector-bucket-color: #737373;
+
+  --value-type-bigint: #058b00;
+  --value-type-boolean: #058b00;
+  --value-type-date: #34d3c6;
+  --value-type-error: #ff0000;
+  --value-type-nan: #86de74;
+  --value-type-null: #737373;
+  --value-type-number: #058b00;
+  --value-type-object: #0c0c0d;
+  --value-type-regexp: #0074e8;
+  --value-type-string: #0c0c0d;
+  --value-type-symbol: #dd00a9;
+  --value-type-undefined: #737373;
+  --value-type-html-attribute-name: #dd00a9;
+  --value-type-html-attribute-separator: #737373;
+  --value-type-html-attribute-value: #003eaa;
+  --value-type-html-tag: #0074e8;
+  --value-type-html-tag-bracket: #0c0c0d;
+  --value-type-html-text: #0c0c0d;
+
+  --badge-default-color: #dcdcdc;
+  --badge-default-contrast-color: #000;
+  --badge-green-color: #73cc6d;
+  --badge-green-contrast-color: #fff;
+  --badge-orange-color: #da7c04;
+  --badge-orange-contrast-color: #fff;
+  --badge-purple-color: #a973cd;
+  --badge-purple-contrast-color: #fff;
+  --badge-unicorn-color: #ff6ddf;
+  --badge-unicorn-contrast-color: #fff;
+  --badge-yellow-color: #e4cd00;
+  --badge-yellow-contrast-color: rgb(99, 79, 5);
+
+  --pulse-color-off: var(--color-transparent);
+  --pulse-color-on: #f2f2f2;
+
+  --focus-mode-active-background-color: var(--background-color-contrast-2);
+  --focus-mode-thumb-color: var(--background-color-contrast-5);
+  --region-focused-color: var(--background-color-contrast-5);
+  --region-unfocused-color: var(--background-color-contrast-1);
+  --region-loaded-color: #ff0000;
+  --region-loading-color: #73cc6d;
+}

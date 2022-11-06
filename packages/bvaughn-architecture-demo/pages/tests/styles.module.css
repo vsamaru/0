@@ -1,0 +1,52 @@
+.Grid1Column,
+.Grid2Columns,
+.Grid3Columns {
+  background-color: var(--background-color-default);
+  display: grid;
+  width: 100vw;
+  height: 100vh;
+  padding: 1em;
+  gap: 1em;
+}
+.Grid2Columns {
+  grid-template-columns: 1fr 2fr;
+}
+.Grid3Columns {
+  grid-template-columns: 1fr 2fr 2fr;
+}
+
+.HorizontalContainer,
+.VerticalContainer {
+  display: flex;
+  flex: 1 1 auto;
+  gap: 0.5em;
+  overflow: auto;
+  font-size: var(--font-size-regular);
+}
+.HorizontalContainer {
+  flex-direction: row;
+}
+.VerticalContainer {
+  flex-direction: column;
+}
+
+.Block {
+  display: block;
+}
+
+.ScopesPanel {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  overflow-x: hidden;
+  background-color: var(--background-color-contrast-2);
+  width: 300px;
+  padding: 0.5em;
+  border-radius: 0.5em;
+}
+
+.Box {
+  border: 1px solid var(--border-color);
+  display: inline-block;
+  margin: 0.5em;
+}

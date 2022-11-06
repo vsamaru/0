@@ -1,0 +1,20 @@
+.CurrentExecutionPoint,
+.CurrentSearchResult {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: var(--line-height);
+  width: 100%;
+  z-index: -1;
+}
+
+.CurrentExecutionPoint {
+  background: var(--background-color-current-execution-point);
+  border-top: 1px solid var(--border-color-current-execution-point);
+  border-bottom: 1px solid var(--border-color-current-execution-point);
+}
+
+.CurrentSearchResult {
+  background: var(--background-color-current-search-result);
+}

@@ -1,0 +1,25 @@
+.StackGrid {
+  display: inline-grid;
+  grid-template-columns: max-content max-content 1fr;
+  grid-column-gap: 1ch;
+}
+
+.Frame {
+  grid-column: 1 / -1;
+  padding-left: 1em;
+  display: flex;
+  width: 100%;
+  gap: 1ch;
+}
+
+.SourceColumn {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: pre;
+  direction: rtl;
+  text-align: left;
+}
+
+.Source {
+  color: var(--color-brand);
+}

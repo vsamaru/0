@@ -1,0 +1,33 @@
+.EventType,
+.EventTypeDisabled {
+  display: grid;
+  grid-template-columns: min-content auto min-content;
+  gap: 0.5ch;
+  align-items: center;
+}
+.EventTypeDisabled {
+  opacity: 0.5;
+}
+
+.Checkbox {
+  margin: 0;
+}
+
+.Label {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.CategoryPrefix {
+  color: var(--color-dim);
+}
+
+.ArrowIcon {
+  fill: var(--collapsible-toggle-color);
+  width: 1em;
+  height: 1em;
+  vertical-align: top;
+  margin: 0 0.25ch;
+  display: inline-block;
+}

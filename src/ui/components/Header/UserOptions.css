@@ -1,0 +1,94 @@
+.user-options *:focus:not(:focus-visible) {
+  outline: none;
+  background: inherit;
+}
+
+.user-options button.expand-dropdown {
+  background: none;
+  padding: 0px 4px;
+}
+
+.user-options button.expand-dropdown .img {
+  background: var(--theme-comment);
+}
+
+.user-options .dropdown-container .content {
+  width: 240px;
+  right: -8px;
+  font-size: 15px;
+}
+
+.user-options .dropdown-container .content button {
+  cursor: pointer;
+}
+
+.user-options .user.row {
+  margin-bottom: 12px;
+  overflow: hidden;
+}
+
+.user-options .user-avatar {
+  flex-shrink: 0;
+}
+
+.user-options .user-avatar img {
+  height: 36px;
+  width: 36px;
+  margin-right: 8px;
+}
+
+.user-options .user-info {
+  overflow: hidden;
+}
+
+.user-options .user-info > * {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.user-options .user-email {
+  color: var(--theme-comment);
+  line-height: 16px;
+}
+
+.user-options .row.logout {
+  padding: 8px;
+}
+
+.user-options .row.logout button {
+  display: flex;
+  align-items: center;
+}
+
+.user-options .row > :not(:first-child) {
+  margin-left: 8px;
+}
+
+.user-options a.logout {
+  width: 100%;
+  text-decoration: none;
+  height: 24px;
+}
+
+.user-options .dropdown-wrapper button {
+  width: 100%;
+  color: var(--theme-icon-color);
+  background: transparent;
+  line-height: 16px;
+}
+
+.dropdown-container .content {
+  top: 48px;
+  animation: linearFadeIn ease 200ms;
+}
+
+.avatar img {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+}
+
+.avatar .user-name {
+  margin-right: 8px;
+}

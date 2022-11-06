@@ -1,0 +1,49 @@
+.Filters {
+  height: 100%;
+  padding: 0.5em 0;
+  flex: 0 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  word-break: initial;
+}
+
+.Filter {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 0 0.75em;
+}
+
+.Divider {
+  width: 100%;
+  flex: 0 0 1px;
+  border: none;
+  background-color: var(--background-color-default);
+}
+
+.ExceptionsErrorIcon {
+  color: var(--color-error);
+  height: 1em;
+  width: 1em;
+}
+
+.SpinnerIcon {
+  color: var(--color-dim);
+  width: 1em;
+  height: 1em;
+  animation: 1s spin linear infinite;
+}
+
+.EmptySpaceFiller {
+  flex: 1 1 auto;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(359deg);
+  }
+}

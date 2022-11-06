@@ -1,0 +1,105 @@
+.Container {
+  width: 100%;
+  height: 2.5em;
+  border: 2px solid transparent;
+  border-top-color: var(--color-contrast);
+  display: flex;
+}
+.Container:focus-within {
+  border-color: var(--color-brand);
+}
+
+.InputAndResults {
+  flex: 1 1 auto;
+  padding: 0 0.5em;
+  display: flex;
+  align-items: center;
+  background-color: var(--background-color-contrast-2);
+}
+
+.SearchIcon {
+  width: 2em;
+  height: 2em;
+  padding: 0.25em;
+  flex: 0 0 2em;
+  display: inline-block;
+  color: var(--color-dim);
+}
+
+.Input {
+  width: 100%;
+  height: 2em;
+  padding: 0 0.5ch;
+  background: none;
+  border: none;
+  outline: none;
+  background-color: var(--background-color-contrast-2);
+  color: var(--color-default);
+
+  font-family: var(--font-family-monospace);
+  font-size: var(--font-size-regular);
+}
+.Input:focus {
+  outline: none;
+  border: none;
+  box-shadow: none;
+}
+
+.Results {
+  user-select: none;
+  display: flex;
+  align-items: center;
+  gap: 0.5ch;
+  white-space: nowrap;
+  margin-left: 0.5ch;
+  padding: 0 0.5ch;
+  font-size: var(--font-size-small);
+  color: var(--color-dim);
+}
+
+.ResultsIconButton {
+  font-family: var(--font-family-monospace);
+  font-size: var(--font-size-regular);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border: none;
+  color: var(--color-dim);
+  padding: 0;
+  width: 1.5em;
+  height: 1.5em;
+  border-radius: 0.25em;
+}
+.ResultsIconButton:hover:not(.ResultsIconButton:disabled):not(.ResultsIconButtonActive) {
+  color: var(--color-default);
+}
+.ResultsIconButton:disabled {
+  color: var(--color-dimmer);
+}
+.ResultsIconButtonActive {
+  color: var(--background-color-primary-button);
+}
+
+.ResultsIcon {
+  width: 1.5em;
+  height: 1.5em;
+  display: inline-block;
+  color: currentColor;
+}
+
+.Modifiers {
+  flex: 0 0 auto;
+  padding: 0 1ch;
+  gap: 1ch;
+  display: flex;
+  align-items: center;
+  background-color: var(--background-color-contrast-2);
+  border-left: 1px solid var(--background-color-default);
+  color: var(--color-dim);
+  user-select: none;
+}
+
+.WholeWordText {
+  text-decoration: underline;
+}

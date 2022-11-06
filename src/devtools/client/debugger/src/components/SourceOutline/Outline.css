@@ -1,0 +1,152 @@
+/* This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at <http://mozilla.org/MPL/2.0/>. */
+
+.outlines-pane > ._content,
+.outlines-pane .outline {
+  height: 100%;
+  overflow-y: hidden;
+}
+
+.outline__container {
+  height: 100%;
+  overflow-y: hidden;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.outline {
+  height: 100%;
+}
+
+.outline > div {
+  width: 100%;
+  position: relative;
+}
+
+.outline-filter form {
+  align-items: center;
+  display: flex;
+  padding: 0;
+  margin: 0;
+  height: 28px;
+}
+
+.outlines-pane {
+  display: flex;
+  flex-direction: column;
+  overflow-y: hidden;
+}
+
+.outlines-pane > ._content,
+.outlines-pane .outline__container {
+  height: 100%;
+  overflow-y: auto;
+}
+
+.outlines-pane.expanded {
+  flex: 1;
+}
+
+.outline-pane-info {
+  padding: 0.5em;
+  width: 100%;
+  font-style: italic;
+  text-align: center;
+  user-select: none;
+  font-size: 12px;
+  overflow: hidden;
+}
+
+.outline-list {
+  list-style-type: none;
+  overflow: auto;
+  overflow-x: hidden;
+}
+
+.outline-list__class-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.outline-list__class-list > .outline-list__element {
+  padding-inline-start: 2rem;
+}
+
+.outline-list__class-list .function-signature .function-name {
+  color: var(--theme-highlight-green);
+}
+
+.outline-list .function-signature .paren {
+  color: inherit;
+}
+
+.outline-list__class h2 {
+  font-weight: normal;
+  font-size: 1em;
+  padding: 3px 0;
+  padding-inline-start: 10px;
+  color: var(--blue-55);
+  margin: 0;
+}
+
+.outline-list__class:not(:first-child) h2 {
+  margin-top: 12px;
+}
+
+.outline-list h2:hover {
+  background: var(--theme-toolbar-background-hover);
+}
+
+.theme-dark .outline-list h2 {
+  color: var(--theme-highlight-blue);
+}
+
+.outline-list h2 .keyword {
+  color: var(--theme-highlight-red);
+}
+
+.outline-list__class h2.focused {
+  background: var(--theme-selection-background);
+}
+
+.outline-list__class h2.focused,
+.outline-list__class h2.focused .keyword {
+  color: var(--theme-selection-color);
+}
+
+.outline-list__element {
+  display: flex;
+  justify-content: space-between;
+  padding: 3px 10px 3px 10px;
+  cursor: default;
+  white-space: nowrap;
+  transition: background-color 0.2s ease-out;
+}
+
+.outline-list > .outline-list__element {
+  padding-inline-start: 1rem;
+}
+
+.outline-list__element.indent {
+  padding-inline-start: 1rem;
+}
+
+.outline-list__element-icon {
+  padding-inline-end: 0.4rem;
+}
+
+.outline-list__element:hover {
+  background: var(--theme-toolbar-background-hover);
+}
+
+.outline-list__element.focused {
+  background: var(--theme-selection-background);
+}
+
+.outline-list__element.focused .outline-list__element-icon,
+.outline-list__element.focused .function-signature * {
+  color: var(--theme-selection-color);
+}

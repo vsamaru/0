@@ -1,0 +1,71 @@
+/* NOTE: this is added to protect against React DevTools */
+
+html,
+body {
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  caret-color: var(--caret-color);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.showRedactions[data-private="true"] {
+  background: black !important;
+  border: 2px solid black !important;
+}
+
+:root {
+  --dark-blue: #2d7eff;
+  --dark-grey: #696969;
+  --faint-red: rgba(255, 0, 0, 0.5);
+  --light-blue: #61cdff;
+  --light-grey: #969696;
+  font-family: "Inter", sans-serif;
+}
+
+#__next,
+#app-container {
+  align-items: stretch;
+  color: var(--body-color);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  position: relative;
+  width: 100%;
+  background: var(--chrome);
+}
+
+.inter {
+  font-family: "Inter", sans-serif;
+}
+
+img.avatar,
+.avatar img {
+  border-radius: 50%;
+  background-color: var(--light-grey);
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+  background: transparent;
+}
+
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 8px;
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 8px;
+  background: rgba(113, 113, 113, 0.5);
+}

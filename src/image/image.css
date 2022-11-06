@@ -1,0 +1,560 @@
+.img.webpack {
+  background-image: url(~devtools/client/debugger/images/sources/webpack.svg) !important;
+}
+.img.vue {
+  background-image: url(~devtools/client/debugger/images/sources/vuejs.svg) !important;
+}
+.img.vuejs {
+  background-image: url(~devtools/client/debugger/images/sources/vuejs.svg) !important;
+}
+.img.aframe {
+  background-image: url(~devtools/client/debugger/images/sources/aframe.svg) !important;
+}
+.img.unicorn-light,
+.img.unicorn-dark {
+  background-image: url(~devtools/client/debugger/images/sources/unicorn-pixel.svg) !important;
+  background-size: auto 100%;
+}
+
+.img.angular {
+  background-image: url(~devtools/client/debugger/images/sources/angular.svg) !important;
+}
+.img.choo {
+  background-image: url(~devtools/client/debugger/images/sources/choo.svg) !important;
+}
+.img.dojo {
+  background-image: url(~devtools/client/debugger/images/sources/dojo.svg) !important;
+}
+.img.ember {
+  background-image: url(~devtools/client/debugger/images/sources/ember.svg) !important;
+}
+.img.meta {
+  background-image: url(~devtools/client/debugger/images/sources/meta.svg) !important;
+  margin-top: -3px;
+}
+.img.marko {
+  background-image: url(~devtools/client/debugger/images/sources/marko.svg) !important;
+}
+.img.mobx {
+  background-image: url(~devtools/client/debugger/images/sources/mobx.svg) !important;
+}
+.img.nextjs {
+  background-image: url(~devtools/client/debugger/images/sources/nextjs.svg) !important;
+}
+.img.node {
+  background-image: url(~devtools/client/debugger/images/sources/node.svg) !important;
+}
+.img.nuxtjs {
+  background-image: url(~devtools/client/debugger/images/sources/nuxtjs.svg) !important;
+}
+.img.preact {
+  background-image: url(~devtools/client/debugger/images/sources/preact.svg) !important;
+}
+.img.pug {
+  background-image: url(~devtools/client/debugger/images/sources/pug.svg) !important;
+}
+.img.rxjs {
+  background-image: url(~devtools/client/debugger/images/sources/rxjs.svg) !important;
+}
+.img.sencha-extjs {
+  background-image: url(~devtools/client/debugger/images/sources/sencha-extjs.svg) !important;
+}
+.webconsole-input-openEditorButton::before {
+  background-image: url(~devtools/client/themes/images/webconsole/editor.svg) !important;
+}
+.sidebar-close-button::before {
+  background-image: url(~devtools/client/themes/images/close.svg) !important;
+}
+.jsterm-editor
+  .webconsole-editor-toolbar
+  .webconsole-editor-toolbar-history-prevExpressionButton::before {
+  background-image: url(~devtools/client/themes/images/arrowhead-up.svg) !important;
+}
+.jsterm-editor
+  .webconsole-editor-toolbar
+  .webconsole-editor-toolbar-history-nextExpressionButton::before {
+  background-image: url(~devtools/client/themes/images/arrowhead-down.svg) !important;
+}
+.jsterm-editor .webconsole-editor-toolbar .webconsole-editor-toolbar-reverseSearchButton::before {
+  background-image: url(~devtools/client/themes/images/webconsole/reverse-search.svg) !important;
+}
+.jsterm-editor .webconsole-editor-toolbar .webconsole-editor-toolbar-closeButton::before {
+  background-image: url(~devtools/client/themes/images/close.svg) !important;
+}
+#inspector-search.devtools-searchbox::before {
+  -webkit-mask-image: url(~devtools/client/themes/images/search.svg) !important;
+}
+.inspector #computed-search.devtools-searchbox::before,
+.inspector #ruleview-search.devtools-searchbox::before {
+  -webkit-mask-image: url(~devtools/client/themes/images/filter-small.svg) !important;
+}
+.devtools-searchinput-clear {
+  background-image: url(~devtools/client/themes/images/search-clear.svg) !important;
+}
+.theme-twisty {
+  background-image: url(~devtools/client/themes/images/arrow.svg) !important;
+}
+.selected > .theme-twisty {
+  background-image: url(~devtools/client/themes/images/arrow-white.svg) !important;
+}
+.all-tabs-menu {
+  background-image: url(~devtools/client/themes/images/dropmarker.svg) !important;
+}
+.message.command > .icon {
+  -webkit-mask-image: url(~devtools/client/themes/images/webconsole/input.svg) !important;
+  background-color: var(--icon-color);
+}
+.message.result > .icon {
+  -webkit-mask-image: url(~devtools/client/themes/images/webconsole/return.svg) !important;
+  background-color: var(--icon-color);
+}
+.message.info > .icon {
+  -webkit-mask-image: url(~devtools/client/themes/images/info-small.svg) !important;
+  background-color: var(--icon-color);
+}
+.message.error > .icon {
+  -webkit-mask-image: url(~devtools/client/themes/images/error-small.svg) !important;
+  background-color: var(--icon-color);
+}
+.message.warn > .icon {
+  -webkit-mask-image: url(~devtools/client/themes/images/alert-small.svg) !important;
+  background-color: var(--icon-color);
+}
+.message.navigationMarker > .icon {
+  -webkit-mask-image: url(~devtools/client/themes/images/webconsole/navigation.svg) !important;
+  background-color: var(--icon-color);
+}
+#split-console-close-button::before {
+  background-image: url(~devtools/client/themes/images/close.svg) !important;
+}
+.menuitem > .command[aria-checked="true"] {
+  background-image: url(~devtools/client/themes/images/check.svg) !important;
+}
+.message.network > .collapse-button::before,
+.message.startGroup > .indent[data-indent="0"] ~ .collapse-button::before,
+.message.startGroupCollapsed > .indent[data-indent="0"] ~ .collapse-button::before {
+  background-image: url(~devtools/client/themes/images/arrow-big.svg) !important;
+}
+.theme-dark button.jump-definition {
+  background-image: url(~devtools/client/shared/components/reps/images/jump-definition-light.svg) !important;
+}
+.theme-light button.jump-definition {
+  background-image: url(~devtools/client/shared/components/reps/images/jump-definition-dark.svg) !important;
+}
+.img.column-marker {
+  background-image: url(~devtools/client/debugger/images/column-marker.svg) !important;
+}
+.theme-dark .event-tooltip-debugger-icon {
+  background-image: url(~devtools/client/shared/components/reps/images/jump-definition-light.svg) !important;
+}
+.theme-light .event-tooltip-debugger-icon {
+  background-image: url(~devtools/client/shared/components/reps/images/jump-definition-dark.svg) !important;
+}
+.invoke-confirm .close-confirm-dialog-button::before {
+  background-image: url(~devtools/client/debugger/images/close.svg) !important;
+}
+.invoke-confirm .learn-more-link::after {
+  background-image: url(~devtools/client/themes/images/help.svg) !important;
+}
+.logo {
+  background-image: url(/images/logo.svg) !important;
+}
+.comment-close {
+  background-image: url(~devtools/client/themes/images/close.svg) !important;
+}
+.comment-write {
+  background-image: url(~devtools/client/themes/images/pen.svg) !important;
+}
+.comment-confirm {
+  background-image: url(~devtools/client/themes/images/check.svg) !important;
+}
+.comment-jump {
+  background-image: url(~devtools/client/debugger/images/next-circle.svg) !important;
+}
+.create-comment {
+  background-image: url(~devtools/client/themes/images/comment-add.svg) !important;
+}
+.comment-marker {
+  background-image: url(~devtools/client/themes/images/comment-marker.svg) !important;
+  background-color: transparent;
+}
+#inspector-splitter-box .sidebar-toggle::before {
+  background-image: url(~devtools/client/themes/images/close-3-pane.svg) !important;
+}
+#inspector-splitter-box .sidebar-toggle.pane-collapsed::before {
+  background-image: url(~devtools/client/themes/images/open-3-pane.svg) !important;
+}
+.expandable.collapsed .markup-expand-badge::before {
+  background-image: url(~devtools/client/themes/images/more.svg) !important;
+}
+.computed-other-property-value::before {
+  background-image: url(~devtools/client/themes/images/arrow-e.svg) !important;
+}
+.scrollbutton-up > .toolbarbutton-icon,
+.scrollbutton-down > .toolbarbutton-icon {
+  background-image: url(~devtools/client/themes/images/breadcrumbs-scrollbutton.svg) !important;
+}
+.img.babel {
+  -webkit-mask-image: url(~devtools/client/debugger/images/sources/babel.svg);
+}
+.img.backbone {
+  -webkit-mask-image: url(~devtools/client/debugger/images/sources/backbone.svg);
+}
+.img.coffeescript {
+  -webkit-mask-image: url(~devtools/client/debugger/images/sources/coffeescript.svg);
+}
+.img.express {
+  -webkit-mask-image: url(~devtools/client/debugger/images/sources/express.svg);
+}
+.img.extension {
+  -webkit-mask-image: url(~devtools/client/debugger/images/sources/extension.svg);
+}
+.img.immutable {
+  -webkit-mask-image: url(~devtools/client/debugger/images/sources/immutable.svg);
+}
+.img.javascript {
+  -webkit-mask-image: url(~devtools/client/debugger/images/sources/javascript.svg);
+}
+.img.jquery {
+  -webkit-mask-image: url(~devtools/client/debugger/images/sources/jquery.svg);
+}
+.img.lodash {
+  -webkit-mask-image: url(~devtools/client/debugger/images/sources/lodash.svg);
+}
+.img.react {
+  -webkit-mask-image: url(~devtools/client/debugger/images/sources/react.svg);
+}
+.img.redux {
+  -webkit-mask-image: url(~devtools/client/debugger/images/sources/redux.svg);
+}
+.img.typescript {
+  -webkit-mask-image: url(~devtools/client/debugger/images/sources/typescript.svg);
+}
+.img.underscore {
+  -webkit-mask-image: url(~devtools/client/debugger/images/sources/underscore.svg);
+}
+.img.arrow {
+  -webkit-mask-image: url(~devtools/client/debugger/images/arrow.svg);
+}
+.img.arrow-down {
+  -webkit-mask-image: url(~devtools/client/debugger/images/arrow-down.svg);
+}
+.img.arrow-up {
+  -webkit-mask-image: url(~devtools/client/debugger/images/arrow-up.svg);
+}
+.img.blackBox {
+  -webkit-mask-image: url(~devtools/client/debugger/images/blackBox.svg);
+}
+.img.breadcrumb {
+  -webkit-mask-image: url(~devtools/client/debugger/images/breadcrumbs-divider.svg);
+}
+.img.case-match {
+  -webkit-mask-image: url(~devtools/client/debugger/images/case-match.svg);
+}
+.img.close {
+  -webkit-mask-image: url(~devtools/client/debugger/images/close.svg);
+}
+.img.disable-pausing {
+  -webkit-mask-image: url(~devtools/client/debugger/images/disable-pausing.svg);
+}
+.img.globe {
+  -webkit-mask-image: url(~devtools/client/debugger/images/globe.svg);
+}
+.img.globe-small {
+  -webkit-mask-image: url(~devtools/client/debugger/images/globe-small.svg);
+}
+.img.window {
+  -webkit-mask-image: url(~devtools/client/debugger/images/window.svg);
+}
+.img.file {
+  -webkit-mask-image: url(~devtools/client/debugger/images/file-small.svg);
+}
+.img.folder {
+  -webkit-mask-image: url(~devtools/client/debugger/images/folder.svg);
+}
+.img.home {
+  -webkit-mask-image: url(~devtools/client/debugger/images/home.svg);
+}
+.img.info {
+  -webkit-mask-image: url(~devtools/client/debugger/images/info.svg);
+}
+.img.loader {
+  -webkit-mask-image: url(~devtools/client/debugger/images/loader.svg);
+}
+.img.more-tabs {
+  -webkit-mask-image: url(~devtools/client/debugger/images/command-chevron.svg);
+}
+.img.next {
+  -webkit-mask-image: url(~devtools/client/debugger/images/next.svg);
+}
+.img.next-circle {
+  -webkit-mask-image: url(~devtools/client/debugger/images/next-circle.svg);
+}
+.img.pane-collapse {
+  -webkit-mask-image: url(~devtools/client/debugger/images/pane-collapse.svg);
+}
+.img.pane-expand {
+  -webkit-mask-image: url(~devtools/client/debugger/images/pane-expand.svg);
+}
+.img.pause {
+  -webkit-mask-image: url(~devtools/client/debugger/images/pause.svg);
+}
+.img.plus {
+  -webkit-mask-image: url(~devtools/client/debugger/images/plus.svg);
+}
+.img.prettyPrint {
+  -webkit-mask-image: url(~devtools/client/debugger/images/prettyPrint.svg);
+}
+.img.reload {
+  -webkit-mask-image: url(~devtools/client/debugger/images/reload.svg);
+}
+.img.regex-match {
+  -webkit-mask-image: url(~devtools/client/debugger/images/regex-match.svg);
+}
+.img.resume {
+  -webkit-mask-image: url(~devtools/client/debugger/images/resume.svg);
+}
+.img.reverseStepOver {
+  -webkit-mask-image: url(~devtools/client/debugger/images/stepOver.svg);
+}
+.img.rewind {
+  -webkit-mask-image: url(~devtools/client/debugger/images/rewind.svg);
+}
+.img.rewind-rounded {
+  -webkit-mask-image: url(~devtools/client/debugger/images/rewind-rounded.svg);
+}
+.img.search {
+  -webkit-mask-image: url(~devtools/client/debugger/images/search.svg);
+}
+.img.shortcuts {
+  -webkit-mask-image: url(~devtools/client/debugger/images/help.svg);
+}
+.img.stepIn {
+  -webkit-mask-image: url(~devtools/client/debugger/images/stepIn.svg);
+}
+.img.stepOut {
+  -webkit-mask-image: url(~devtools/client/debugger/images/stepOut.svg);
+}
+.img.stepOver {
+  -webkit-mask-image: url(~devtools/client/debugger/images/stepOver.svg);
+}
+.img.tab {
+  -webkit-mask-image: url(~devtools/client/debugger/images/tab.svg);
+}
+.img.whole-word-match {
+  -webkit-mask-image: url(~devtools/client/debugger/images/whole-word-match.svg);
+}
+.img.worker {
+  -webkit-mask-image: url(~devtools/client/debugger/images/worker.svg);
+}
+.img.locked {
+  -webkit-mask-image: url(~devtools/client/debugger/images/locked.svg);
+}
+.img.unlocked {
+  -webkit-mask-image: url(~devtools/client/debugger/images/unlocked.svg);
+}
+.img.share {
+  -webkit-mask-image: url(~devtools/client/debugger/images/share.svg);
+}
+.img.users {
+  -webkit-mask-image: url(~devtools/client/debugger/images/users.svg);
+}
+.img.users-2 {
+  -webkit-mask-image: url(~devtools/client/debugger/images/users-2.svg);
+}
+.img.user-circle {
+  -webkit-mask-image: url(~devtools/client/debugger/images/user-circle.svg);
+}
+.img.link {
+  -webkit-mask-image: url(~devtools/client/debugger/images/link.svg);
+}
+.img.invite {
+  -webkit-mask-image: url(~devtools/client/debugger/images/invite.svg);
+}
+.img.expand {
+  -webkit-mask-image: url(~devtools/client/debugger/images/expand.svg);
+}
+.img.log {
+  -webkit-mask-image: url(~devtools/client/debugger/images/webconsole-logpoint.svg);
+}
+.img.pause-circle {
+  -webkit-mask-image: url(~devtools/client/debugger/images/pause-circle-16x16.svg);
+}
+.img.play-circle {
+  -webkit-mask-image: url(~devtools/client/debugger/images/play-circle.svg);
+}
+.img.play-circle-lg {
+  -webkit-mask-image: url(~devtools/client/debugger/images/play-circle-28x28.svg);
+}
+.img.pause-circle-lg {
+  -webkit-mask-image: url(~devtools/client/debugger/images/pause-circle-28x28.svg);
+}
+.img.replay-lg {
+  -webkit-mask-image: url(~devtools/client/debugger/images/replay-circle-28x28.svg);
+}
+.img.document {
+  -webkit-mask-image: url(~devtools/client/debugger/images/document.svg);
+}
+.img.document-text {
+  -webkit-mask-image: url(~devtools/client/debugger/images/document-text.svg);
+}
+.img.dots-horizontal {
+  -webkit-mask-image: url(~devtools/client/debugger/images/dots-horizontal.svg);
+}
+.img.view-grid {
+  -webkit-mask-image: url(~devtools/client/debugger/images/view-grid.svg);
+}
+.img.view-list {
+  -webkit-mask-image: url(~devtools/client/debugger/images/view-list.svg);
+}
+.img.chevron-down {
+  -webkit-mask-image: url(~devtools/client/debugger/images/chevron-down.svg);
+}
+.img.link-horizontal {
+  -webkit-mask-image: url(~devtools/client/debugger/images/link-horizontal.svg);
+}
+.img.arrow-down-2 {
+  -webkit-mask-image: url(~devtools/client/debugger/images/arrow-down-2.svg);
+}
+.img.arrow-up-2 {
+  -webkit-mask-image: url(~devtools/client/debugger/images/arrow-up-2.svg);
+}
+.img.webconsole-panel {
+  -webkit-mask-image: url(~devtools/client/themes/images/tool-webconsole.svg);
+}
+.img.explorer-panel {
+  -webkit-mask-image: url(~devtools/client/themes/images/tool-explorer.svg);
+}
+.img.comments-panel-icon {
+  -webkit-mask-image: url(~devtools/client/themes/images/tool-comments.svg);
+}
+.img.debugger-panel {
+  -webkit-mask-image: url(~devtools/client/themes/images/tool-debugger.svg);
+}
+.img.inspector-panel {
+  -webkit-mask-image: url(~devtools/client/themes/images/tool-inspector.svg);
+}
+.img.menu {
+  -webkit-mask-image: url(~devtools/client/themes/images/menu.svg);
+}
+.img.refresh {
+  -webkit-mask-image: url(~devtools/client/themes/images/refresh.svg);
+}
+.img.arrowhead-right {
+  -webkit-mask-image: url(~devtools/client/themes/images/arrowhead-right.svg);
+}
+.img.chat-alt {
+  -webkit-mask-image: url(~devtools/client/themes/images/chat-alt.svg);
+}
+.img.event-click {
+  -webkit-mask-image: url(~devtools/client/themes/images/event-click.svg);
+}
+.img.event-comment {
+  -webkit-mask-image: url(~devtools/client/themes/images/event-comment.svg);
+}
+.img.login {
+  -webkit-mask-image: url(~devtools/client/themes/images/login.svg);
+}
+.img.settings {
+  -webkit-mask-image: url(~devtools/client/themes/images/settings.svg);
+}
+.img.settings-appearance {
+  -webkit-mask-image: url(~devtools/client/themes/images/settings-appearance.svg);
+}
+.img.settings-team {
+  -webkit-mask-image: url(~devtools/client/themes/images/settings-team.svg);
+}
+.img.settings-privacy {
+  -webkit-mask-image: url(~devtools/client/themes/images/settings-privacy.svg);
+}
+.img.settings-experimental {
+  -webkit-mask-image: url(~devtools/client/themes/images/settings-experimental.svg);
+}
+.img.settings-support {
+  -webkit-mask-image: url(~devtools/client/themes/images/settings-support.svg);
+}
+.img.plus-circle {
+  -webkit-mask-image: url(~devtools/client/themes/images/plus-circle.svg);
+}
+.img.reply {
+  -webkit-mask-image: url(~devtools/client/themes/images/reply.svg);
+}
+.img.filter-circle-fill {
+  -webkit-mask-image: url(~devtools/client/themes/images/filter-circle-fill.svg);
+}
+.img.filter-circle-outline {
+  -webkit-mask-image: url(~devtools/client/themes/images/filter-circle-outline.svg);
+}
+.img.paper-airplane {
+  -webkit-mask-image: url(~devtools/client/themes/images/paper-airplane.svg);
+}
+.img.trash {
+  -webkit-mask-image: url(~devtools/client/themes/images/trash.svg);
+}
+.img.pencil-sm {
+  -webkit-mask-image: url(~devtools/client/themes/images/pencil-sm.svg);
+}
+.img.pencil {
+  -webkit-mask-image: url(~devtools/client/themes/images/pen.svg);
+}
+.img.location-marker {
+  -webkit-mask-image: url(~devtools/client/themes/images/location-marker.svg);
+}
+.tree-node button.arrow {
+  -webkit-mask-image: url(~devtools/client/debugger/images/arrow.svg);
+}
+#command-button-pick::before {
+  -webkit-mask-image: url(~devtools/client/themes/images/command-pick.svg);
+}
+button.open-inspector {
+  -webkit-mask-image: url(~devtools/client/themes/images/open-inspector.svg);
+}
+.img.lightning {
+  -webkit-mask-image: url(/images/lightning.svg);
+}
+
+.img.loom {
+  -webkit-mask-image: url(/images/Loom.svg);
+}
+.img.k-icon {
+  -webkit-mask-image: url(/images/k-icon.svg);
+}
+.img.cmd-icon {
+  -webkit-mask-image: url(/images/cmd-icon.svg);
+}
+.img.palette {
+  -webkit-mask-image: url(/images/palette.svg);
+}
+.img.replay-logo {
+  -webkit-mask-image: url(/images/replay-logo.svg);
+}
+.overlay-container.rewind .img {
+  -webkit-mask-image: url(~devtools/client/debugger/images/rewind-button.svg);
+}
+.overlay-container.fast-forward .img {
+  -webkit-mask-image: url(~devtools/client/debugger/images/rewind-button.svg);
+}
+
+.webconsole-console-settings-menu-button::before {
+  background-image: url(~devtools/client/themes/images/settings.svg) !important;
+}
+
+.jsterm-editor .webconsole-editor-toolbar .webconsole-editor-toolbar-executeButton::before {
+  content: url(~devtools/client/themes/images/webconsole/run.svg);
+}
+.devtools-button.devtools-feature-callout::after {
+  content: url(~devtools/client/themes/images/badge-blue.svg);
+}
+.devtools-option-toolbarbutton {
+  list-style-image: url(~devtools/client/themes/images/settings.svg);
+}
+.collapse-button::before {
+  background: url(~devtools/client/themes/images/arrow.svg) no-repeat center;
+}
+button.open-accessibility-inspector,
+button.open-inspector {
+  mask: url(~devtools/client/shared/components/reps/images/open-inspector.svg) no-repeat;
+}
+button.invoke-getter {
+  mask: url(~devtools/client/shared/components/reps/images/input.svg) no-repeat;
+}

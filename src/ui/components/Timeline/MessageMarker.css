@@ -1,0 +1,46 @@
+.timeline .marker {
+  height: 9px;
+  width: 9px;
+  position: absolute;
+  margin-top: auto;
+  margin-bottom: auto;
+  top: 0;
+  bottom: 0;
+  pointer-events: all;
+  display: none;
+}
+
+.timeline .preview-markers-container .marker {
+  z-index: var(--z-index-2--hovered-message);
+  display: block;
+}
+
+.timeline .marker:hover {
+  cursor: pointer;
+}
+
+.timeline .marker .fill {
+  fill: var(--replaying-marker-fill);
+}
+
+.timeline .marker .stroke {
+  stroke: var(--body-bgcolor);
+  pointer-events: none;
+}
+
+.timeline .marker.paused {
+  z-index: var(--z-index-1--paused-message);
+}
+
+.timeline .marker.paused .fill {
+  fill: var(--replaying-paused-marker-fill);
+}
+
+.timeline .marker.paused .stroke {
+  stroke: var(--replaying-paused-marker-stroke);
+  stroke: var(--body-bgcolor);
+}
+
+.timeline .marker:focus {
+  outline: none;
+}

@@ -1,0 +1,75 @@
+#toolbox {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  padding-right: 1px; /* Without this, the console message overlay buttons cover the splitbox splitter. */
+  --toolbox-bgcolor: #f9f9fa;
+  --paused-background-color: var(--secondary-accent);
+}
+
+#toolbox-toolbar {
+  display: flex;
+  flex-direction: column;
+  border-top: 0px;
+}
+
+.toolbox-toolbar-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-top: 0px;
+  background: var(--chrome);
+  border-right: 1px solid var(--chrome);
+}
+
+/* Split Console styles */
+.toolbox-top-panels {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.toolbox-panel {
+  display: flex;
+  flex: 1;
+  height: 100%;
+  min-height: 0;
+}
+
+/* Toolbar Styles */
+.toolbar-panel-button:first-child {
+  margin-top: 0;
+}
+
+.toolbar-panel-button {
+  display: flex;
+  cursor: default;
+  color: var(--theme-toolbar-color);
+  align-items: center;
+  border-radius: 4px;
+  cursor: pointer;
+  transition-duration: 200ms;
+  margin-top: 4px;
+}
+
+.toolbar-panel-button:hover {
+  background-color: var(--toolbarbutton-focus-bgcolor);
+}
+
+.toolbar-panel-icon {
+  width: 24px;
+  height: 24px;
+  mask-repeat: no-repeat;
+  mask-size: cover;
+  margin: 4px;
+}
+
+.toolbar-panel-button.active {
+  color: var(--theme-toolbar-selected-color);
+}
+
+.toolbar-panel-button.active .toolbar-panel-icon {
+  color: var(--primary-accent);
+}

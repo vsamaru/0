@@ -1,0 +1,133 @@
+.BigInt,
+.Boolean,
+.Date,
+.Error,
+.NaN,
+.Null,
+.Number,
+.RegExp,
+.String,
+.Symbol,
+.Undefined {
+  display: inline;
+}
+.BigInt {
+  color: var(--value-type-bigint);
+}
+.Boolean {
+  color: var(--value-type-boolean);
+}
+.Date {
+  color: var(--value-type-date);
+}
+.Error {
+  color: var(--value-type-error);
+}
+.NaN {
+  color: var(--value-type-nan);
+}
+.Null {
+  color: var(--value-type-null);
+}
+.Number {
+  color: var(--value-type-number);
+}
+.RegExp {
+  color: var(--value-type-regexp);
+}
+.String {
+  color: var(--value-type-string);
+}
+.Symbol {
+  color: var(--value-type-symbol);
+}
+.Undefined {
+  color: var(--value-type-undefined);
+}
+
+.IconButton {
+  height: 1em;
+  width: 1em;
+  outline: none;
+  background: none;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+  vertical-align: top;
+}
+
+.Icon {
+  height: 1em;
+  width: 1em;
+  color: var(--object-inspector-go-to-definition-icon-color);
+  display: inline-block;
+}
+.Icon:hover {
+  color: var(--object-inspector-go-to-definition-icon-color-hover);
+}
+
+.ArrayPropertyList {
+  display: inline;
+}
+
+.FunctionParametersList {
+  display: inline;
+  color: var(--object-inspector-function-name);
+}
+
+.ObjectPropertyList {
+  display: inline;
+}
+
+.MapKey {
+  display: inline;
+  color: var(--object-inspector-expanded-key);
+}
+
+.Value {
+  display: inline;
+}
+
+.Separator {
+  color: var(--object-inspector-separator-color);
+}
+
+.HTMLClosingTag,
+.HTMLOpeningTag {
+  color: var(--value-type-html-tag);
+  line-height: 1em;
+}
+
+.Bracket {
+  color: var(--value-type-html-tag-bracket);
+}
+
+.HtmlAttribute {
+  display: inline;
+  margin-left: 1ch;
+  color: var(--value-type-html-attribute-name);
+}
+
+.Separator {
+  color: var(--value-type-html-attribute-separator);
+}
+
+.HtmlAttributeValue {
+  color: var(--value-type-html-attribute-value);
+}
+
+.HtmlText {
+  color: var(--value-type-html-text);
+}
+
+.FunctionKeyword {
+  color: var(--object-inspector-function-keyword);
+  margin-right: 0.5ch;
+}
+.FunctionName {
+  color: var(--object-inspector-function-name);
+}
+
+.ArrayLength {
+  color: var(--object-inspector-separator-color);
+}

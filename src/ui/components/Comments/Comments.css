@@ -1,0 +1,98 @@
+.comments-container {
+  position: absolute;
+  pointer-events: none;
+  width: 100%;
+  top: 9px; /* Arbitrary value to push the markers away from the bottom of the overlay container */
+  height: 17px; /* Corresponds with the height of the comment marker */
+  z-index: var(--z-index-1--timeline-comment);
+}
+
+.comments-container > * {
+  pointer-events: auto;
+}
+
+.comments-container .img.comment-marker {
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  outline: none;
+  background-color: var(--primary-accent);
+  border-radius: 8px;
+}
+
+.comment-card:hover .comment-actions {
+  opacity: 1;
+}
+
+/* This avoids flickering in the UI when a user adds a new comment
+that starts off as empty, and then proceeds to press cancel which
+deletes the comment */
+.comments-container .img.comment-marker.hidden:not(.expanded) {
+  display: none;
+}
+
+.img.comment-marker:hover,
+.img.comment-marker.hovered,
+.img.comment-marker.expanded,
+.create-comment:hover {
+  animation-duration: 200ms;
+  cursor: pointer;
+}
+
+.comments-container .img.comment-marker.paused {
+  z-index: var(--z-index-1--paused-comment);
+  background-color: var(--replaying-paused-marker-fill);
+}
+
+.comments-container .img.comment-marker.primary-highlight:not(.paused) {
+  background-color: var(--secondary-accent);
+}
+
+.create-comment {
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  outline: none;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.create-comment:focus {
+  background-color: transparent;
+}
+
+.comment textarea {
+  width: 100%;
+  height: 120px;
+  border: 1px solid #e9e9e9;
+  padding: 0.5rem;
+  font-size: 1.3rem;
+  line-height: 1.7rem;
+  color: #777;
+}
+
+.comment .actions {
+  display: flex;
+  align-items: center;
+}
+
+.onboarding-text h2 {
+  font-size: 18px;
+  font-weight: bold;
+  color: var(--body-color);
+}
+
+.onboarding-text {
+  text-align: center;
+  font-size: 15px;
+  padding: 20px;
+}
+
+.onboarding-text .large-icon {
+  font-size: 44px;
+  color: #c9c9c9;
+}
+
+.onboarding-text .arrow {
+  margin: 0 auto;
+}

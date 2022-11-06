@@ -1,0 +1,88 @@
+/* This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at <http://mozilla.org/MPL/2.0/>. */
+
+/**
+ * Variant of AccessibleImage used in sources list and tabs.
+ * Define the different source type / framework / library icons here.
+ */
+
+.source-icon {
+  margin-inline-end: 4px;
+}
+
+/* Icons for frameworks and libs */
+
+.img.aframe {
+  background-color: transparent !important;
+}
+
+.img.angular {
+  background-color: transparent !important;
+}
+
+.img.choo {
+  background-color: transparent !important;
+}
+
+.img.dojo {
+  background-color: transparent !important;
+}
+
+.img.ember {
+  background-color: transparent !important;
+}
+
+.img.javascript {
+  mask-size: 14px 14px;
+}
+
+.img.marko {
+  background-color: transparent !important;
+}
+
+.img.mobx {
+  background-color: transparent !important;
+}
+
+.img.nextjs {
+  background-color: transparent !important;
+}
+
+.img.node {
+  background-color: transparent !important;
+}
+
+.img.nuxtjs {
+  background-color: transparent !important;
+}
+
+.img.preact {
+  background-color: transparent !important;
+}
+
+.img.pug {
+  background-color: transparent !important;
+}
+
+.img.react {
+  background-color: var(--theme-highlight-bluegrey);
+}
+
+.img.rxjs {
+  background-color: transparent !important;
+}
+
+.img.sencha-extjs {
+  background-color: transparent !important;
+}
+
+/* We use both 'Vue' and 'VueJS' when identifying frameworks */
+.img.vue,
+.img.vuejs {
+  background-color: transparent !important;
+}
+
+.img.webpack {
+  background-color: transparent !important;
+}

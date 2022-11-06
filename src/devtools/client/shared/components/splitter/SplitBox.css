@@ -1,0 +1,68 @@
+/* This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
+
+.split-box {
+  display: flex;
+  flex: 1;
+  min-width: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.split-box.vert {
+  flex-direction: row;
+}
+
+.split-box.horz {
+  flex-direction: column;
+}
+
+.split-box > .uncontrolled {
+  display: flex;
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+}
+
+.split-box > .controlled {
+  display: flex;
+}
+
+.split-box > .splitter {
+  border-color: transparent;
+}
+
+.split-box.vert > .splitter {
+  cursor: ew-resize;
+}
+
+.split-box.horz > .splitter {
+  cursor: ns-resize;
+}
+
+/* Emphasized splitter has the hover style. */
+.split-box.horz > .splitter:hover {
+  background-color: var(--chrome);
+}
+
+.split-box.disabled {
+  pointer-events: none;
+}
+
+/**
+ * Make sure splitter panels are not processing any mouse
+ * events. This is good for performance during splitter
+ * bar dragging.
+ */
+.split-box.dragging > .controlled,
+.split-box.dragging > .uncontrolled {
+  pointer-events: none;
+}
+
+/* This disables splitter bar dragging when the user is
+in the console. Dragging/resizing should only work in the debugger
+or the inspector where the split console can be displayed.  */
+#toolbox.console .split-box.horz > .splitter {
+  pointer-events: none;
+}

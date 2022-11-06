@@ -1,0 +1,127 @@
+.theme-tab-font-size,
+.secondary-toolbox-header,
+.source-tab,
+h2 {
+  font-size: 14px;
+}
+
+#video {
+  flex-grow: 1;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.collapsed-toolbox {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+#graphics,
+#graphicsVideo {
+  position: absolute;
+  transform-origin: top left;
+}
+
+#graphicsVideo {
+  max-width: unset;
+}
+
+.collapsed-toolbox #graphics {
+  position: absolute;
+}
+
+.command-button {
+  float: left;
+}
+
+.command-button img {
+  height: 20px;
+  width: 20px;
+}
+
+.content-iframe {
+  border: none;
+  height: 100%;
+  padding-top: 2px;
+  width: 100%;
+}
+
+.debugger .CodeMirror {
+  height: 100%;
+}
+
+.webconsole-app {
+  background-color: var(--body-bgcolor);
+  height: 100%;
+  width: 100%;
+}
+
+#command-button-pick {
+  margin-left: 0px;
+  padding: 8px 5px;
+  position: relative;
+}
+
+#command-button-pick::before {
+  background-color: var(--theme-icon-color);
+}
+
+#command-button-pick:hover {
+  background-color: var(--tab-bgcolor);
+}
+#command-button-pick:hover::before {
+  background-color: var(--theme-icon-hover-color);
+}
+
+#command-button-pick.active::before {
+  background-color: var(--primary-accent);
+}
+
+.app-mask {
+  height: 100%;
+  left: 0px;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+}
+
+.A11y-mouse,
+.A11y-keyboard {
+  width: 100%;
+}
+
+.horizontal-panels {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  overflow: hidden;
+  width: 100%;
+}
+
+.vertical-panels {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  overflow: hidden;
+  width: 100%;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  width: 0px;
+}
+
+.devtools-inspector-tab-panel {
+  width: 100%;
+  height: 100%;
+}
+
+@import url("devtools/client/themes/variables.css");
+@import url("devtools/client/themes/webconsole.css");
+@import url("devtools/client/themes/components-frame.css");
+@import url("devtools/client/themes/markup.css");
+@import url("devtools/client/themes/common.css");
+@import url("devtools/client/themes/splitters.css");
+@import url("devtools/client/themes/dark-theme.css");
+@import url("devtools/client/themes/light-theme.css");

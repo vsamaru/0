@@ -1,0 +1,10 @@
+.CurrentTimeIndicator {
+  width: 100%;
+  height: 2px;
+  background-color: var(--color-current);
+
+  /* Ensure current time indicator is always above console rows */
+  position: absolute;
+  z-index: 3;
+  margin-top: -1px;
+}

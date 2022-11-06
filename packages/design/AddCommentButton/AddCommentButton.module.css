@@ -1,0 +1,50 @@
+.Root {
+  width: 26px;
+  height: 26px;
+  margin-left: auto;
+  position: relative;
+}
+
+.TextFade {
+  white-space: nowrap;
+  /* 100ms duration must match constant in component */
+  transition: all 100ms 40ms ease;
+  transform: scale(0.98);
+  opacity: 0;
+  margin: 0 0.5rem 0 0.25rem;
+}
+
+.AddCommentButton {
+  display: inline-flex;
+  flex-shrink: 0;
+  align-items: center;
+  line-height: 1rem;
+  font-size: 0.75rem;
+  height: 26px;
+  padding-left: 3px;
+  border-radius: 3rem;
+  color: #fff;
+  overflow: hidden;
+  transition: width 180ms ease-out;
+  width: 26px;
+  background-color: var(--primary-accent);
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.AddCommentButton svg {
+  flex-shrink: 0;
+}
+
+.AddCommentButton.isOpened {
+  width: 122px;
+}
+
+.AddCommentButton.isPausedOnHit {
+  background-color: var(--secondary-accent);
+}
+
+.Icon {
+  padding: 0.125rem;
+}

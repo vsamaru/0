@@ -1,0 +1,44 @@
+.Block {
+  display: inline-block;
+}
+.Inline {
+  display: inline;
+  vertical-align: top;
+}
+
+.ToggleButton {
+  min-height: 1em;
+}
+
+.ArrowContainer {
+  width: 0.75em;
+  height: 1em;
+  position: relative;
+}
+
+.ArrowCollapsed,
+.ArrowExpanded {
+  transform-origin: 0.5em 0.5em;
+  transition: transform 200ms;
+  width: 1em;
+  height: 1em;
+  margin-right: 0.5ch;
+  display: inline-block;
+}
+.ArrowExpanded {
+  transform: rotate(90deg);
+}
+
+.ArrowIcon {
+  fill: var(--collapsible-toggle-color);
+  width: 1em;
+  height: 1em;
+  display: inline-block;
+}
+
+.Children {
+  margin-left: 0.5em;
+  padding-left: 0.5em;
+  display: flex;
+  flex-direction: column;
+}

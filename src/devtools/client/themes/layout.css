@@ -1,0 +1,92 @@
+/* This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
+
+.layout-container {
+  height: 100%;
+  width: 100%;
+  overflow-y: auto;
+  overflow-x: auto;
+  min-width: 200px;
+}
+
+.layout-container .accordion ._content {
+  padding: 0;
+}
+
+#layout-container .accordion ._header {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+/**
+ * Common styles for the layout container
+ */
+
+.layout-content ul {
+  list-style: none;
+}
+
+.layout-content li {
+  padding: 3px 0;
+  user-select: none;
+}
+
+.layout-content input {
+  margin-inline-end: 7px;
+  vertical-align: middle;
+}
+
+.layout-content label {
+  margin-inline-start: -3px;
+}
+
+.layout-color-swatch {
+  width: 12px;
+  height: 12px;
+  margin-inline-start: -1px;
+  border: 1px solid var(--theme-highlight-gray);
+  border-radius: 50%;
+  cursor: pointer;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.layout-color-value {
+  display: none;
+}
+
+/* Layout Properties: Common styles used for the Box Model and Flexbox Properties */
+
+.layout-properties-header {
+  font-size: 12px;
+  padding: 2px 3px;
+  user-select: none;
+}
+
+.layout-properties-expander {
+  vertical-align: middle;
+  display: inline-block;
+  margin-inline-start: 2px;
+  margin-inline-end: 1px;
+}
+
+.layout-properties-wrapper {
+  column-width: 250px;
+  column-gap: 20px;
+  column-rule: 1px solid var(--theme-splitter-color);
+}
+
+.layout-properties-wrapper .computed-property-view {
+  padding-inline-start: 20px;
+}
+
+.layout-properties-wrapper .computed-property-name-container {
+  flex: 1;
+}
+
+.layout-properties-wrapper .computed-property-value-container {
+  flex: 1;
+  display: block;
+}

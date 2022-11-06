@@ -1,0 +1,31 @@
+.Source {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  height: 100%;
+}
+.Source:focus {
+  outline: none;
+}
+
+.SourceList {
+  margin: 0;
+  overflow: hidden;
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  cursor: default;
+  position: relative;
+}
+
+.Loader {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-dim);
+}
+
+.HoveredTarget {
+  filter: var(--token-active-filter-color) !important;
+}

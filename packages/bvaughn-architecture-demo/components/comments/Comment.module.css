@@ -1,0 +1,108 @@
+.PublishedComment,
+.UnpublishedComment {
+  font-size: var(--font-size-regular);
+}
+.UnpublishedComment {
+  background-color: var(--background-color-contrast-1);
+}
+
+.HeaderRow {
+  display: flex;
+  align-items: center;
+  gap: 1ch;
+  padding: 0.5em;
+  user-select: none;
+}
+
+.UserName {
+  font-weight: bold;
+  flex: 1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.Time {
+}
+
+.Avatar {
+  height: 1.5em;
+  width: 1.5em;
+  border-radius: 1.5em;
+}
+
+.Content {
+  padding: 0.5em;
+}
+
+.PublishedReply,
+.UnpublishedReply {
+  padding-left: 0.5em;
+  padding-right: 0.25em;
+}
+.UnpublishedReply {
+  background-color: var(--background-color-contrast-1);
+}
+
+.Button {
+  padding: 0;
+  outline: none;
+  background: var(--background-color-contrast-1);
+  color: var(--color-default);
+  border: 2px solid var(--background-color-contrast-2);
+  padding: 0.5em;
+  display: flex;
+  border-radius: 0.25em;
+  cursor: pointer;
+}
+.Button:hover {
+  border: 2px solid var(--background-color-contrast-3);
+}
+.Button:focus {
+  border: 2px solid var(--color-brand);
+}
+
+.Icon {
+  width: 1em;
+  height: 1em;
+  fill: currentColor;
+  display: inline-block;
+}
+
+.ReplyButton {
+  cursor: pointer;
+  user-select: none;
+  color: var(--color-brand);
+  outline: none;
+  border: none;
+  padding: 0.5em;
+  background-color: var(--background-color-contrast-1);
+  color: var(--color-default);
+  border: 2px solid var(--background-color-contrast-2);
+  border-radius: 0.25em;
+  margin: 0.25em;
+}
+.ReplyButton:focus {
+  border: 2px solid var(--color-brand);
+}
+
+.Input {
+  width: 100%;
+  outline: none;
+  border: none;
+  padding: 0.5em;
+  background-color: var(--background-color-contrast-1);
+  border: 2px solid var(--background-color-contrast-2);
+  color: var(--color-default);
+  border-radius: 0.25em;
+  font-family: var(--font-family-default);
+}
+.Input:focus {
+  border: 2px solid var(--color-brand);
+}
+
+.ConfirmDeleteButton {
+  background-color: var(--color-error);
+  color: var(--color-contrast);
+  border-color: var(--color-error);
+}

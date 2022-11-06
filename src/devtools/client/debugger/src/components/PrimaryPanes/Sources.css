@@ -1,0 +1,98 @@
+/* This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at <http://mozilla.org/MPL/2.0/>. */
+
+.sources-panel {
+  background-color: var(--theme-sidebar-background);
+}
+
+.sources-panel * {
+  user-select: none;
+}
+
+.sources-list {
+  height: 100%;
+}
+
+.sources-list .img.blackBox {
+  mask-size: 13px;
+  background-color: var(--theme-icon-checked-color);
+}
+
+.sources-list .managed-tree {
+  flex: 1;
+  display: flex;
+  overflow-y: auto;
+  height: 100%;
+}
+
+.sources-list .managed-tree .tree {
+  padding: 4px 0;
+}
+
+.sources-list .managed-tree .tree .node {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 3px 8px 3px 6px;
+}
+
+.sources-list .img {
+  margin-inline-end: 4px;
+}
+
+.sources-list .tree .focused .img {
+  background-color: #ffffff;
+}
+
+.sources-list .tree .focused .label {
+  color: #ffffff;
+}
+
+.sources-list .tree .img.no-arrow {
+  display: none;
+}
+
+.sources-list .tree .label .suffix {
+  font-style: italic;
+  font-size: 0.9em;
+  color: var(--theme-comment);
+}
+
+.sources-list .tree .focused .label .suffix {
+  color: inherit;
+}
+
+.theme-dark .source-list .node.focused {
+  background-color: var(--theme-tab-toolbar-background);
+}
+
+.sources-list .tree .label {
+  display: inline-block;
+  line-height: 16px;
+  color: var(--body-color);
+}
+
+.no-sources-message {
+  width: 100%;
+  font-style: italic;
+  text-align: center;
+  padding: 0.5em;
+  font-size: 12px;
+  user-select: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.sources-pane {
+  height: 100%;
+  border-radius: 8px 8px 0 0;
+}
+
+.sources-pane .managed-tree {
+  height: 100%;
+}
+
+.accordion .sources-pane ._content {
+  border-radius: 0 0 0 0;
+}

@@ -1,0 +1,26 @@
+version: 0.1
+plugins:
+  sources:
+    - id: trunk
+      ref: v0.0.3
+      uri: https://github.com/trunk-io/plugins
+cli:
+  version: 0.17.0-beta
+lint:
+  enabled:
+    - actionlint@1.6.8
+    - eslint@8.13.0
+    - gitleaks@8.3.0
+    - prettier@2.5.1
+  ignore:
+    - linters: [ALL]
+      paths:
+        - .github
+        - docs/codebase-notes
+        - public
+        - src/graphql
+        - test/fixtures
+        - "**/*.config.js"
+        - packages/import-sort-style-replay
+        - "./.trunk" 
+        - "./test"

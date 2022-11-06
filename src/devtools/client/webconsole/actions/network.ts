@@ -1,0 +1,26 @@
+import { RequestEventInfo, RequestInfo, responseBodyData } from "@replayio/protocol";
+
+import type { ThreadFront as ThreadFrontType } from "protocol/thread";
+import { UIStore, UIThunkAction } from "ui/actions";
+import {
+  networkRequestsLoaded,
+  newNetworkRequests,
+  newRequestBodyParts,
+  newResponseBodyParts,
+} from "ui/actions/network";
+
+let onResponseBodyPart: (responseBodyParts: responseBodyData) => void;
+
+export const setupNetwork = async (store: UIStore, ThreadFront: typeof ThreadFrontType) => {
+  await ThreadFront.findNetworkRequests(
+    async data => store.dispatch(onNetworkRequestsThunk(data)),
+    async data => store.dispatch(newResponseBodyParts(data)),
+    async data => store.dispatch(newRequestBodyParts(data))
+  );
+  store.dispatch(networkRequestsLoaded());
+};
+
+const onNetworkRequestsThunk =
+  (data: { requests: RequestInfo[]; events: RequestEventInfo[] }): UIThunkAction =>
+  async dispatch =>
+    dispatch(newNetworkRequests(data));

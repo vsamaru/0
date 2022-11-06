@@ -1,0 +1,64 @@
+.modal-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: var(--z-index-8--modal);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-mask {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.modal-content {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  height: max-content;
+  width: max-content;
+  min-width: 480px;
+  border-radius: 8px;
+  padding: 20px;
+  background: var(--modal-bgcolor);
+  border: 1px solid var(--modal-border);
+  backdrop-filter: blur(21px);
+  -webkit-backdrop-filter: blur(21px);
+  color: var(--theme-toolbar-color);
+  animation: linearFadeIn ease 200ms;
+}
+
+.modal-drop-shadow,
+.modal-content {
+  box-shadow: rgba(15, 15, 15, 0.05) 0px 0px 0px 1px, rgba(15, 15, 15, 0.1) 0px 3px 6px,
+    rgba(15, 15, 15, 0.2) 0px 9px 24px;
+}
+
+.modal-with-border {
+  border: 1px solid var(--modal-border);
+  background-color: var(--modal-bgcolor);
+}
+
+.modal-close {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  padding: 8px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+@keyframes modalFadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

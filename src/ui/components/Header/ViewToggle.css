@@ -1,0 +1,51 @@
+.view-toggle {
+  display: flex;
+  padding: 2px 0;
+  cursor: pointer;
+  text-align: left;
+  padding: 1px;
+  width: auto;
+  appearance: none;
+  border: none;
+  outline: none !important;
+  border-radius: 8px;
+  font-size: 15px;
+  background: var(--theme-toggle-bgcolor);
+  border: 1px solid var(--theme-toggle-bgcolor);
+  position: relative;
+  user-select: none;
+}
+
+.view-toggle .handle {
+  position: absolute;
+  content: "";
+  height: calc(100% - 2px);
+  border-radius: 6px;
+  background: var(--theme-toggle-handle-bgcolor);
+  width: calc(50% - 2px);
+  top: 0;
+  margin: 1px;
+  transition: left 140ms ease-in;
+}
+
+.view-toggle .option {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.view-toggle .text {
+  min-width: 145px;
+  text-align: center;
+  padding: 3px 36px;
+  white-space: nowrap;
+  color: var(--tab-standard-color);
+  position: relative;
+  z-index: 1;
+  transition: ease-in-out 80ms color;
+}
+
+.view-toggle .active {
+  color: var(--tab-selected-color);
+  font-weight: 400;
+}

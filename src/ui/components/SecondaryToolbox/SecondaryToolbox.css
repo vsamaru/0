@@ -1,0 +1,116 @@
+.secondary-toolbox {
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  width: 100%;
+  overflow: hidden;
+}
+
+.secondary-toolbox-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background: var(--tab-bgcolor);
+}
+
+.secondary-toolbox-header .panel-buttons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  overflow: auto;
+}
+
+.secondary-toolbox-header button {
+  position: relative;
+  height: calc(var(--editor-header-height) - 1px);
+  cursor: pointer;
+  transition: color 200ms;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: row;
+  align-items: flex-end;
+  overflow: hidden;
+  background-color: var(--tab-bgcolor);
+}
+
+.secondary-toolbox-header .panel-buttons button {
+  padding: 8px 12px;
+}
+
+.secondary-toolbox-header button > *:not(:last-child) {
+  margin-right: 8px;
+}
+
+.secondary-toolbox-header button:focus {
+  outline: none;
+  background-color: inherit;
+}
+
+.secondary-toolbox-header .label {
+  color: var(--tab-color);
+}
+
+.secondary-toolbox-header button.layoutbutton:hover {
+  background-color: var(--tab-bgcolor);
+}
+
+.secondary-toolbox-header .expanded .label {
+  color: var(--tab-selected-color);
+}
+
+.secondary-toolbox-header button.expanded {
+  background: inherit;
+  background: var(--tab-selected-bgcolor);
+  color: var(--tab-selected-color);
+}
+
+.secondary-toolbox-header button:is(:hover, :focus-visible) {
+  color: var(--tab-hover-color);
+  background-color: var(--tab-hover-bgcolor);
+}
+
+.secondary-toolbox-header .action-buttons button {
+  color: var(--theme-text-color-inactive);
+  cursor: auto;
+}
+
+/* It's important to set min-height: 0 here, otherwise the console output
+overflows its container (https://drafts.csswg.org/css-flexbox-1/#min-size-auto) */
+.secondary-toolbox .secondary-toolbox-content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-height: 0;
+}
+
+.secondary-toolbox .toolbox-bottom-panels {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  height: 100%;
+}
+
+.secondary-toolbox .toolbox-bottom-panels .toolbox-panel {
+  flex: 1;
+  min-height: 0;
+  height: 100%;
+}
+
+.secondary-toolbox .splitter {
+  background-clip: padding-box;
+}
+
+.secondary-toolbox-right-buttons-container {
+  position: relative;
+  overflow: visible;
+}
+
+.secondary-toolbox-scroll-overflow-gradient {
+  position: absolute;
+  top: 0;
+  left: -2rem;
+  width: 2rem;
+  height: 100%;
+  background-image: linear-gradient(to left, var(--tab-bgcolor), rgba(0, 0, 0, 0));
+}

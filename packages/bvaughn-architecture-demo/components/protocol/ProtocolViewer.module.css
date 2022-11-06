@@ -1,0 +1,51 @@
+.ProtocolViewer {
+  background-color: var(--background-color-contrast-2);
+  width: 100%;
+  border-radius: 0.5em;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+}
+
+.Header {
+  flex: 0 0 auto;
+  padding: 0.5em;
+  font-size: var(--font-size-large);
+  color: var(--color-default);
+  display: flex;
+  align-items: center;
+}
+
+.SearchInput {
+  margin: 0.25em 0.5em 0.5em;
+  border: none;
+  border-radius: 0.25em;
+}
+
+.List {
+  flex: 1 1 auto;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+}
+
+.ListItem {
+  border-bottom: 1px solid var(--border-color-light);
+}
+
+.ListItemHeader {
+  display: flex;
+  align-items: center;
+  padding: 0.25em 0.5em;
+  width: 100%;
+  user-select: none;
+  cursor: pointer;
+}
+
+.ListItemChildren {
+  background-color: var(--background-color-light);
+  padding: 0;
+  margin: 0;
+}

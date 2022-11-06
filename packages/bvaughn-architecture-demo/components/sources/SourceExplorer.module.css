@@ -1,0 +1,57 @@
+.List {
+  flex: 1 1 auto;
+  height: 100%;
+  border-radius: 0.5em;
+  background-color: var(--background-color-contrast-2);
+  overflow: auto;
+}
+
+.Header {
+  padding: 0.5em;
+  font-size: var(--font-size-large);
+  color: var(--color-default);
+  display: flex;
+  align-items: center;
+}
+.HeaderLeft,
+.HeaderRight {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: flex;
+  align-items: center;
+  flex: 1 1 auto;
+  gap: 1ch;
+}
+
+.SourceTree {
+  display: flex;
+  flex-direction: column;
+  white-space: pre;
+}
+
+.FocusedListItem,
+.ListItem {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 0.5em;
+  padding: 0.25em 0.5em;
+  cursor: default;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transition: background-color 0.2s ease-in-out;
+}
+.ListItem:hover {
+  background-color: var(--background-color-contrast-1);
+}
+.FocusedListItem {
+  background-color: var(--background-color-primary-button);
+  color: var(--color-primary-button);
+}
+
+.Icon {
+  width: 1em;
+  height: 1em;
+  flex: 0 0 1em;
+  display: inline-block;
+}

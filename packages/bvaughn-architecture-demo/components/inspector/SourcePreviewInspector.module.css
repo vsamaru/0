@@ -1,0 +1,31 @@
+.SourcePreviewInspector {
+  font-family: var(--font-family-monospace);
+  font-size: var(--font-size-regular);
+  color: var(--color-default);
+  overflow: hidden;
+}
+
+.Header {
+  padding: 0.5em;
+  border-bottom: 1px solid var(--border-color);
+  color: var(--color-default);
+}
+
+.FixedSizeInspectorWrapper,
+.InspectorWrapper {
+  max-height: 250px !important;
+  max-width: 400px;
+  overflow: auto;
+  padding: 0.5em;
+  display: flex;
+  flex-direction: column;
+}
+.FixedSizeInspectorWrapper {
+  height: 250px !important;
+  width: 400px;
+  overflow-x: hidden;
+}
+
+.Inspector {
+  overflow: initial;
+}

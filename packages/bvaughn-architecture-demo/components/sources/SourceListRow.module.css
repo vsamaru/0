@@ -1,0 +1,250 @@
+.Row {
+  min-width: max(var(--longest-line-width), var(--list-width));
+}
+
+.LineWithHits,
+.LineWithoutHits {
+  white-space: pre-wrap;
+  font-family: var(--font-family-monospace);
+  font-size: var(--font-size-regular);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  transition: background-color 250ms;
+}
+
+.LineWithoutHits .LineNumber {
+  color: var(--color-dimmer);
+}
+
+.Header {
+  display: flex;
+  align-items: center;
+  gap: 1ch;
+}
+
+.HoverButton {
+  position: absolute;
+  top: 0;
+  left: 0.25em;
+  z-index: 5;
+
+  width: 1.5em;
+  height: 1.5em;
+  border-radius: 0.5em;
+
+  display: none;
+  align-items: center;
+  justify-content: center;
+
+  outline: none;
+  border: none;
+  padding: 0;
+
+  background-color: var(--background-color-primary-button);
+  color: var(--color-primary-button);
+
+  cursor: pointer;
+  transition: all 100ms;
+}
+.HoverButton:disabled {
+  background-color: var(--background-color-disabled-button);
+  color: var(--color-disabled-button);
+  cursor: default;
+}
+
+.HoverButton:hover:not(.HoverButton:disabled) {
+  top: -0.25em;
+  left: 0;
+  width: 2em;
+  height: 2em;
+  transition: all 100ms;
+}
+
+.HoverButton:hover:not(.HoverButton:disabled) .HoverButtonIcon {
+  width: 1.5em;
+  height: 1.5em;
+}
+
+.BreakpointIcon,
+.DisabledBreakpointIcon,
+.HoverButtonIcon,
+.Icon {
+  width: 1em;
+  height: 1em;
+  display: inline-block;
+}
+.BreakpointIcon,
+.DisabledBreakpointIcon {
+  color: var(--color-brand);
+}
+.DisabledBreakpointIcon {
+  opacity: 0.5;
+}
+
+.LineWithHits:hover .HoverButton {
+  display: flex;
+}
+
+.LineNumber {
+  background-color: var(--background-color-contrast-2);
+  height: var(--line-height);
+  width: calc(var(--line-number-size) + 2ch);
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: flex-end;
+  font-size: var(--font-size-small);
+  padding: 0 1ch;
+  color: var(--color-dim);
+  user-select: none;
+  position: relative;
+  overflow: visible;
+}
+
+.BreakpointToggleOff,
+.BreakpointToggleOn {
+  cursor: pointer;
+  display: flex;
+  position: absolute;
+  top: 50%;
+  height: 2.5ch;
+  margin-top: -1.25ch;
+  left: -1ch;
+  right: -1ch;
+  text-align: right;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 1ch;
+}
+.BreakpointToggleOff:after,
+.BreakpointToggleOn:after {
+  left: 100%;
+  top: 50%;
+  border: solid transparent;
+  content: "";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-width: 1.25ch;
+  margin-top: -1.25ch;
+}
+.BreakpointToggleOff {
+  display: none;
+  background-color: var(--color-dimmer);
+  color: var(--color-default);
+}
+.BreakpointToggleOff:after {
+  border-color: var(--color-transparent);
+  border-left-color: var(--color-dimmer);
+}
+.BreakpointToggleOn {
+  background-color: var(--background-color-primary-button);
+  color: var(--color-primary-button);
+}
+.BreakpointToggleOn:after {
+  border-color: var(--color-transparent);
+  border-left-color: var(--background-color-primary-button);
+}
+
+.LineWithHits .LineNumber:hover .BreakpointToggleOff {
+  display: flex;
+}
+
+.LineHitCountBar {
+  flex: 0 0 0.5em;
+  height: var(--line-height);
+}
+.LineHitCountBar0 {
+  background-color: var(--color-hit-counts-bar-0);
+}
+.LineHitCountBar1 {
+  background-color: var(--color-hit-counts-bar-1);
+}
+.LineHitCountBar2 {
+  background-color: var(--color-hit-counts-bar-2);
+}
+.LineHitCountBar3 {
+  background-color: var(--color-hit-counts-bar-3);
+}
+
+.LineHitCountLabel {
+  height: var(--line-height);
+  font-size: var(--font-size-tiny);
+  flex: 0 0 calc(var(--hit-count-size) + 2ch);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-hit-counts-label-color);
+}
+.LineHitCountLabel0 {
+}
+.LineHitCountLabel1 {
+  background-color: var(--color-hit-counts-label-background-1);
+}
+.LineHitCountLabel2 {
+  background-color: var(--color-hit-counts-label-background-2);
+}
+.LineHitCountLabel3 {
+  background-color: var(--color-hit-counts-label-background-3);
+}
+
+.LineSegment {
+  margin: 0;
+}
+
+.LineSegment :global(.tok-definition),
+.LineSegment :global(.tok-local),
+.LineSegment :global(.tok-keyword),
+.LineSegment :global(.tok-meta),
+.LineSegment :global(.tok-propertyName),
+.LineSegment :global(.tok-typeName),
+.LineSegment :global(.tok-variableName),
+.LineSegment :global(.tok-variableName2) {
+  transition: all 50ms ease;
+}
+
+.LineSegment :global(.tok-definition):hover,
+.LineSegment :global(.tok-local):hover,
+.LineSegment :global(.tok-keyword):hover,
+.LineSegment :global(.tok-meta):hover,
+.LineSegment :global(.tok-propertyName):hover,
+.LineSegment :global(.tok-typeName):hover,
+.LineSegment :global(.tok-variableName):hover,
+.LineSegment :global(.tok-variableName2):hover {
+  filter: var(--token-hover-filter-color);
+}
+
+.BreakpointButton {
+  display: inline-block;
+  background: transparent;
+  outline: none;
+  border: none;
+  padding: 0;
+  margin: 0 0.5ch;
+  cursor: pointer;
+  height: 1em;
+}
+
+.LineSegmentsAndPointPanel {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: var(--line-height);
+  border-left: 1px solid var(--border-color-light);
+}
+
+.CurrentLine {
+  background-color: var(--background-color-current-line);
+}
+
+.PointPanel {
+  position: absolute;
+  top: var(--line-height);
+  width: calc(var(--list-width) - var(--line-number-size) - 2ch);
+  left: calc(var(--line-number-size) + 2ch);
+  border-left: 1px solid var(--border-color-light);
+  font-size: var(--font-size-small);
+}

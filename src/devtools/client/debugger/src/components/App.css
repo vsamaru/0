@@ -1,0 +1,80 @@
+/* This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at <http://mozilla.org/MPL/2.0/>. */
+
+button {
+  background: transparent;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+.split-box .debugger {
+  display: flex;
+  flex: 1 1 auto;
+  width: 0;
+}
+
+.sources-list .tree-indent,
+.scopes-list .tree-indent,
+.preview-popup .tree-indent {
+  width: 16px;
+  margin-inline-start: 0;
+  border-inline-start: 0;
+}
+
+.editor-pane {
+  background: var(--chrome);
+  display: flex;
+  flex: 1;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  z-index: 10; /* ensure tooltips are above other panes */
+}
+
+/* Utils */
+.absolute-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.d-flex {
+  display: flex;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.rounded-circle {
+  border-radius: 50%;
+}
+
+.text-white {
+  color: white;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.min-width-0 {
+  min-width: 0;
+}
+
+/*
+  Prevents horizontal scrollbar from displaying when
+  right pane collapsed (#7505)
+*/
+.split-box > .splitter:last-child {
+  display: none;
+}
+
+/* Launchpad Root */
+
+#mount {
+  display: flex;
+  height: 100%;
+}

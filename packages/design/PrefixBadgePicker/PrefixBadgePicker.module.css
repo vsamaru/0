@@ -1,0 +1,93 @@
+.PrefixBadge {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 26px;
+}
+
+.DefaultBadge {
+  background-color: var(--badge-foreground);
+  border-radius: 0.3rem;
+}
+
+.ColorBadge,
+.UnicornBadge {
+  width: 1rem;
+  height: 1rem;
+}
+
+.ColorBadge {
+  display: grid;
+  place-items: center;
+  position: relative;
+  border-radius: 100%;
+  background-color: transparent;
+}
+
+.UnicornBadge {
+  width: 1rem;
+  height: 1rem;
+  background-image: url(./images/unicorn-pixel.svg) !important;
+  background-size: auto 100%;
+}
+
+.ColorBadge::before,
+.ColorBadge::after {
+  grid-area: 1 / 1 / 1 / 1;
+  content: "";
+  display: block;
+  border-radius: 100%;
+  background-color: var(--primary-color);
+}
+
+.ColorBadge::before {
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.18s ease-out;
+}
+
+[data-was-active="true"] .ColorBadge::before,
+[data-open="true"] .PrefixBadge:hover .ColorBadge::before {
+  opacity: 0.2;
+}
+
+.ColorBadge::after {
+  width: 50%;
+  height: 50%;
+}
+
+/* Background fill colors */
+
+:global(.theme-light) .PrefixBadgePicker {
+  --badge-foreground: #dcdcdc;
+  --badge-background--active: #f8f8f8;
+}
+
+:global(.theme-dark) .PrefixBadgePicker {
+  --badge-foreground: #898f95;
+  --badge-background--active: #474c52;
+}
+
+.green {
+  --primary-color: var(--badge-green-color);
+  color: var(--badge-green-contrast-color);
+}
+.orange {
+  --primary-color: var(--badge-orange-color);
+  color: var(--badge-orange-contrast-color);
+}
+.purple {
+  --primary-color: var(--badge-purple-color);
+  color: var(--badge-purple-contrast-color);
+}
+.yellow {
+  --primary-color: var(--badge-yellow-color);
+  color: var(--badge-yellow-contrast-color);
+}
+.unicorn {
+  --primary-color: var(--badge-unicorn-color);
+  color: var(--badge-unicorn-contrast-color);
+}
