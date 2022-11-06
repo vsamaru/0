@@ -1,5 +1,4 @@
-/dist/
-dist.tgz
+
 node_modules
 *~
 .DS_Store
@@ -7,7 +6,7 @@ cypress/videos/
 test/example-recordings.json
 .idea/
 cypress.env.json
-.env*
+
 !.env.sample
 .next
 next-env.d.ts
