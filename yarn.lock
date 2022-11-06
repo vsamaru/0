@@ -1653,7 +1653,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/runtime@npm:^7.0.0, @babel/runtime@npm:^7.10.2, @babel/runtime@npm:^7.12.0, @babel/runtime@npm:^7.12.1, @babel/runtime@npm:^7.12.5, @babel/runtime@npm:^7.13.10, @babel/runtime@npm:^7.16.3, @babel/runtime@npm:^7.16.7, @babel/runtime@npm:^7.17.0, @babel/runtime@npm:^7.17.8, @babel/runtime@npm:^7.18.3, @babel/runtime@npm:^7.3.1, @babel/runtime@npm:^7.5.0, @babel/runtime@npm:^7.5.5, @babel/runtime@npm:^7.7.2, @babel/runtime@npm:^7.7.6, @babel/runtime@npm:^7.8.3, @babel/runtime@npm:^7.8.4, @babel/runtime@npm:^7.8.7, @babel/runtime@npm:^7.9.2":
+"@babel/runtime@npm:^7.0.0, @babel/runtime@npm:^7.10.2, @babel/runtime@npm:^7.12.0, @babel/runtime@npm:^7.12.1, @babel/runtime@npm:^7.12.5, @babel/runtime@npm:^7.13.10, @babel/runtime@npm:^7.16.3, @babel/runtime@npm:^7.16.7, @babel/runtime@npm:^7.17.8, @babel/runtime@npm:^7.18.3, @babel/runtime@npm:^7.3.1, @babel/runtime@npm:^7.5.0, @babel/runtime@npm:^7.5.5, @babel/runtime@npm:^7.7.2, @babel/runtime@npm:^7.7.6, @babel/runtime@npm:^7.8.3, @babel/runtime@npm:^7.8.4, @babel/runtime@npm:^7.8.7, @babel/runtime@npm:^7.9.2":
   version: 7.18.3
   resolution: "@babel/runtime@npm:7.18.3"
   dependencies:
@@ -3651,14 +3651,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@redux-devtools/extension@npm:^3.2.2":
-  version: 3.2.2
-  resolution: "@redux-devtools/extension@npm:3.2.2"
+"@redux-devtools/extension@npm:^3.2.3":
+  version: 3.2.3
+  resolution: "@redux-devtools/extension@npm:3.2.3"
   dependencies:
-    "@babel/runtime": ^7.17.0
+    "@babel/runtime": ^7.18.3
+    immutable: ^4.0.0
   peerDependencies:
     redux: ^3.1.0 || ^4.0.0
-  checksum: f7668cc72f4d570e9f63a3581185047b5eab1564dfecf0bcea7974d9bc08fe8f87ea3acd658cd1db160f0a82c9e879a49b3cd1c193f6e0d8c1490af9975c20e5
+  checksum: 320d6154026ad5368d8df762629b286d82774b9342f1489ba00d9a6f202f226b7bb6d44252791c84b50f1fd07e0ffa0d94607f1ffd9845bc2bda5da6597adbd4
   languageName: node
   linkType: hard
 
@@ -14528,7 +14529,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"immutable@npm:^4.1.0":
+"immutable@npm:^4.0.0, immutable@npm:^4.1.0":
   version: 4.1.0
   resolution: "immutable@npm:4.1.0"
   checksum: b9bc1f14fb18eb382d48339c064b24a1f97ae4cf43102e0906c0a6e186a27afcd18b55ca4a0b63c98eefb58143e2b5ebc7755a5fb4da4a7ad84b7a6096ac5b13
@@ -20810,7 +20811,7 @@ __metadata:
     "@recordreplay/playwright": ^1.18.3
     "@recordreplay/sourcemap-upload-cli": ^0.1.1
     "@redux-devtools/app": ^2.1.4
-    "@redux-devtools/extension": ^3.2.2
+    "@redux-devtools/extension": ^3.2.3
     "@reduxjs/toolkit": ^1.8.4
     "@replayio/protocol": ^0.32.3
     "@replayio/replay": ^0.9.6
