@@ -9,7 +9,6 @@ const withBundleAnalyzer = require("@next/bundle-analyzer")({
 
 const withTM = transpileModules(["bvaughn-architecture-demo", "design"]);
 
-
 /**
  * @type {Pick<
  *   import('next').NextConfig,
