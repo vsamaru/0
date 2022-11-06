@@ -86,7 +86,7 @@
     "react-is": "^18.2.0",
     "react-json-view": "^1.21.3",
     "react-lazyload": "^3.2.0",
-    "react-merge-refs": "^1.1.0",
+    "react-merge-refs": "^2.0.1",
     "react-redux": "^8.0.2",
     "react-table": "^7.7.0",
     "react-tooltip": "^4.2.21",
