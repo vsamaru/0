@@ -11,6 +11,7 @@
     "start": "next start -p 8080",
     "build": "next build"
   },
+  "private": true,
   "dependencies": {
     "@apollo/client": "^3.5.10",
     "@auth0/auth0-react": "1.2.0",
